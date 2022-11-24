@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<title>Natural Intelligence</title>
+	<link rel="stylesheet" href="css/osvita-ru.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+	$(function() {
+	var sldr = $('.sldr'),
+	sldrContent = sldr.html(),
+	slideWidth = $('.sl_ctr').outerWidth(),
+	slideCount = $('.sldr img').length,
+	prev = $('.prev'),
+	next = $('.next'),
+	sldrInterval = 4000,
+	animateTime = 1500,
+	course = 1,
+	margin = - slideWidth;
+	$('.sldr img:last').clone().prependTo('.sldr');$('.sldr img').eq(1).clone().appendTo('.sldr');$('.sldr').css('margin-left',-slideWidth);function nextSlide(){interval=window.setInterval(animate,sldrInterval)}function animate(){if(margin==-slideCount*slideWidth-slideWidth){sldr.css({'marginLeft':-slideWidth});margin=-slideWidth*2}else if(margin==0&&course==-1){sldr.css({'marginLeft':-slideWidth*slideCount});margin=-slideWidth*slideCount+slideWidth}else{margin=margin-slideWidth*(course)}sldr.animate({'marginLeft':margin},animateTime)}function sldrStop(){window.clearInterval(interval)}prev.click(function(){if(sldr.is(':animated')){return false}var course2=course;course=-1;animate();course=course2});next.click(function(){if(sldr.is(':animated')){return false}var course2=course;course=1;animate();course=course2});sldr.add(next).add(prev).hover(function(){sldrStop()},nextSlide);nextSlide()});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="heading-clearfix">
+				<a href="Главная.html"><img src="img/logo.png" alt="Natural Inteligence" class="logo"></a>
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="Главная.html">Главная</a>
+						</li> 
+						<li>
+							<a href="Карьера.html">Опыт</a>
+						</li>
+						<li>
+							<a href="Образование.html">Образование</a>
+						</li>
+						<li>
+							<a href="Услуги.html">Услуги</a>
+						</li>
+						<li>
+							<a href="Отзывы.html">Отзывы и контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="button" href="Освіта.html">UA|RU</a>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div id="hidden_panel">
+				<form id="mailForm">
+					<input type="name" id="name" name="user-name" placeholder="Имя" class="form-control">
+					<input type="phone" id="phone" name="user-phone" placeholder="Номер телефона" class="form-control"><br>
+					<input type="email" id="email" name="user-email" placeholder="Email" class="form-control"><br>
+					<textarea name="message" id="message" placeholder="Сообщение" class="form-control-mess"></textarea> 
+					<button type="button" id="sendMail" class="btn btn-success"><img src="img/send.png" alt="Send"></button>
+				</form>
+				<div id="errorMess"></div>
+    			<div id="panel">	
+        			<span class="Online">Oнлайн консультация</span> 
+        			<img src="img/skype.png" alt="skype">
+   		 		</div>
+			</div>
+			<div class="sl_ctr">
+				<div class="sldr"> 
+					<img src="img/1-ru.jpg" alt="">
+					<img src="img/2.jpg" alt="">
+					<img src="img/3.jpg" alt="">
+					<img src="img/4.jpg" alt="">
+					<img src="img/5.jpg" alt="">
+					<img src="img/6.jpg" alt="">
+				</div>
+				<div class="prev"><img src="img/prev.png" alt=""></div>
+				<div class="next"><img src="img/next.png" alt=""></div>
+			</div>
+			<div class="content-block">
+				<article class="first-block">
+					<div class="MBA">
+						<div class="contain">
+							2012-2014<p>«Международный институт бизнеса» (МИБ)</p>г.Киев  
+							<ul>
+								<li>
+								<span class="descr-first-block">Получил степень МВА с отличием;   
+								</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<article class="second-block">
+					<div class="ZhPolitex">
+						<div class="contain">
+							1997-2003<p>«Житомирский инженерно-технологический институт»</p>г.Житомир 
+							<ul>
+								<li>
+								<span class="descr-second-block">Факультет: экономика и менеджмент;
+								Специальность: учет и аудит;
+								</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<article class="third-block">
+					<div class="Biznes">
+						<div class="contain3">
+							2002, 2004<p>«Бизнес-мастер»</p>г.Киев
+							<ul>
+								<li>
+								<span class="descr-third-block">Тема: «Технология увеличения продаж»</li>
+								<p><li>Тема: «Работа с VIP-клиентами. Эффективное планирование рабочего времени»</p></li>
+								</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<arti1cle class="text">
+					<div class="third-text-block">
+						<div class="contain-text-block">
+							Мое первое образование и занимаемая должность дали мне возможность лучше понимать финансовую составляющую бизнес-образования. Поэтому думаю, для бизнес-образования предыдущее финансово-экономическое образование подходит больше других.
+						</div>
+					</div>
+					<div class="first-text-block">
+						<div class="contain-text-second-block">
+							Я систематизировал полученные до бизнес-образования знания, а также получил общую единую картину бизнеса, которым занимаюсь. Несмотря на то что в институте я учил экономические дисциплины, у меня понятия не было о маркетинге, праве, менеджменте. И именно благодаря бизнес-образованию я получил цельную картину бизнеса.
+						</div>
+					</div>
+					<div class="second-text-block">
+						<div class="contain-text-third-block">
+							Кроме знаний бизнес-школа дала мне дополнительные связи. Это люди, с которыми мы учились вместе, это преподаватели, которые нас обучали – мы в любой момент можем списаться, поговорить по телефону и поделиться информацией, проконсультироваться друг у друга. И это очень помогает в принятии правильных решений.
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<a href="#" class="back-to-top">
+			<img src="img/up-arrow.svg" alt="left-site-foto" class="left-site-foto">
+		</a>
+	</footer>
+
+	<script src="js/formMail-ru.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+</body>
+</html>	

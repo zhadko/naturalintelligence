@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<title>Natural Intelligence</title>
+	<link rel="stylesheet" href="css/osvita.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+	$(function() {
+	var sldr = $('.sldr'),
+	sldrContent = sldr.html(),
+	slideWidth = $('.sl_ctr').outerWidth(),
+	slideCount = $('.sldr img').length,
+	prev = $('.prev'),
+	next = $('.next'),
+	sldrInterval = 4000,
+	animateTime = 1500,
+	course = 1,
+	margin = - slideWidth;
+	$('.sldr img:last').clone().prependTo('.sldr');$('.sldr img').eq(1).clone().appendTo('.sldr');$('.sldr').css('margin-left',-slideWidth);function nextSlide(){interval=window.setInterval(animate,sldrInterval)}function animate(){if(margin==-slideCount*slideWidth-slideWidth){sldr.css({'marginLeft':-slideWidth});margin=-slideWidth*2}else if(margin==0&&course==-1){sldr.css({'marginLeft':-slideWidth*slideCount});margin=-slideWidth*slideCount+slideWidth}else{margin=margin-slideWidth*(course)}sldr.animate({'marginLeft':margin},animateTime)}function sldrStop(){window.clearInterval(interval)}prev.click(function(){if(sldr.is(':animated')){return false}var course2=course;course=-1;animate();course=course2});next.click(function(){if(sldr.is(':animated')){return false}var course2=course;course=1;animate();course=course2});sldr.add(next).add(prev).hover(function(){sldrStop()},nextSlide);nextSlide()});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="heading-clearfix">
+				<a href="index.html"><img src="img/logo.png" alt="Natural Inteligence" class="logo"></a>
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="index.html">Головна</a>
+						</li>
+						<li>
+							<a href="Кар'єра.html">Досвід</a>
+						</li>
+						<li>
+							<a href="Освіта.html">Освіта</a>
+						</li>
+						<li>
+							<a href="Послуги.html">Послуги</a>
+						</li>
+						<li>
+							<a href="Відгуки.html">Відгуки й контактні данні</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="button" href="Образование.html">UA|RU</a>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div id="hidden_panel">
+				<form id="mailForm">
+					<input type="name" id="name" name="user-name" placeholder="Ім'я" class="form-control">
+					<input type="phone" id="phone" name="user-phone" placeholder="Номер телефону" class="form-control"><br>
+					<input type="email" id="email" name="user-email" placeholder="Email" class="form-control"><br>
+					<textarea name="message" id="message" placeholder="Повідомлення" class="form-control-mess"></textarea> 
+					<button type="button" id="sendMail" class="btn btn-success"><img src="img/send.png" alt="Send"></button>
+				</form>
+				<div id="errorMess"></div>
+    			<div id="panel">	
+        			<span class="Online">Oнлайн консультація</span> 
+        			<img src="img/skype.png" alt="skype">
+   		 		</div>
+			</div>
+			<div class="sl_ctr">
+				<div class="sldr"> 
+					<img src="img/1.jpg" alt="">
+					<img src="img/2.jpg" alt="">
+					<img src="img/3.jpg" alt="">
+					<img src="img/4.jpg" alt="">
+					<img src="img/5.jpg" alt="">
+					<img src="img/6.jpg" alt="">
+				</div>
+				<div class="prev"><img src="img/prev.png" alt=""></div>
+				<div class="next"><img src="img/next.png" alt=""></div>
+			</div>
+			<div class="content-block">
+				<article class="first-block">
+					<div class="MBA">
+						<div class="contain">
+							2012-2014<p>«Міжнародний інститут бізнесу» (МІБ)</p>м.Київ  
+							<ul>
+								<li>
+								<span class="descr-first-block">Отримав ступінь МВА з відзнакою;   
+								</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<article class="second-block">
+					<div class="ZhPolitex">
+						<div class="contain">
+							1997-2003<p>«Житомирський інженерно-технологічний інститут»</p>м.Житомир 
+							<ul>
+								<li>
+								<span class="descr-second-block">Факультет: економіка і менеджмент;
+								Спеціальність: облік і аудит;
+								</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<article class="third-block">
+					<div class="Biznes">
+						<div class="contain3">
+							2002, 2004<p>«Бізнес-майстер»</p>м.Київ
+							<ul>
+								<li>
+								<span class="descr-third-block">Тема: «Технологія збільшення продажів»</li>
+								<p><li>Тема: «Робота з VIP-клієнтами. Ефективне планування робочого часу»</p></li>
+								</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<article class="text">
+					<div class="third-text-block">
+						<div class="contain-text-block">
+							Моя перша освіта і займана посада дали мені можливість краще розуміти фінансову складову бізнес-освіти.Тому думаю, що для бізнес-освіти попередня фінансово-економічна освіта підходить більше за інші.
+						</div>
+					</div>
+					<div class="first-text-block">
+						<div class="contain-text-first-block">
+							Я систематизував знання, отримані до бізнес-освіти, а також отримав загальну єдину картину бізнесу, яким займаюсь. Незважаючи на те, що в інституті я вчив економічні дисципліни, у мене поняття не було про маркетинг, право, менеджмент. І саме завдяки бізнес-освіті я отримав цільну картину бізнесу.
+						</div>
+					</div>
+					<div class="second-text-block">
+						<div class="contain-text-second-block">
+							Окрім знань навчання надає додаткові зв’язки. Це люди, з якими ми навчались разом, викладачі, які нас навчали - ми в будь-який момент можемо списатись, поговорити по телефону й поділитись один з одним інформацією, проконсультуватись. І це дуже допомагає в прийнятті правильних рішень.
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<a href="#" class="back-to-top">
+			<img src="img/up-arrow.svg" alt="left-site-foto" class="left-site-foto">
+		</a>
+	</footer>
+
+	<script src="js/formMail.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+</body>
+</html>	
