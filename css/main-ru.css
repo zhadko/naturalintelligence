@@ -1,0 +1,1078 @@
+/*css*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+.heading-clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+header {
+	font-family: Arial;
+	background: url(../img/header.jpg) no-repeat center top / cover; 
+	height: 118px;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.logo {
+	margin: 0;
+	padding-left: 46px;
+	float: left;
+}
+
+nav {
+	float: right;
+	margin-top: 54px;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 38px
+}
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+
+    -webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;	
+}
+
+.menu a:hover {
+	color: #66ceda;
+}
+
+.menu a:after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0%;
+	background-color: #66ceda;
+	transition: width .3s ease-in-out;
+}
+
+.menu a:hover:after,
+.menu a:focus:after {
+	width: 100%;
+}
+
+.button {
+	position: relative;
+	background: #252525;
+	color: #dcdbdb;
+	border-radius: 10px 10px 0px 0px;
+	display: block;
+	width: 60px;
+	height: 20px;
+	margin: 88px 0px 0px 88px;
+	padding: 5px 0px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left;
+
+	-webkit-transition: 0.3s ease-in-out; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+	background: #A4A4A4;
+	color: #252525;
+}
+
+section {
+	background: url(../img/Fon.jpg);
+	background-size: cover;
+	height: 1112px;
+	background-position: center;
+	position: relative;
+	top: 118px;
+}
+
+#hidden_panel {
+    position: fixed; /* положение */
+    top: 0px; /* отступ сверху */
+    margin-left: 768px; /* отступ справа */
+    background: #d8d8d8; /* цвет фона */
+    width: 320px; /* ширина блока */
+    height: 140px; /* высота блока */
+    font: 14px Arial; /* размер и тип шрифта */
+    color: #000; /* цвет текста */
+    text-align: center; /* выравнивание текста по центру */
+    border: 2px outset #4378ff;
+    z-index: 2;
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 0 0 0; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 0 0 0;
+    -o-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+}
+
+#panel {
+    position: absolute; /* положение */ 
+    top: 116px; /* отступ сверху */
+    left: -2px; /* отступ слева */
+    background: #66ceda; /* цвет фона */
+    color: #000; /* цвет текста */
+    width: 324px; /* ширина блока */
+    height: 50px; /* высота блока */
+    padding: 0 auto; /* отступы от границ внутри блока */
+    text-align: left;/* выравнивание текста */
+    font-size: 19px;
+    font-family: Calibri;
+    z-index: 2;
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 0 10px 10px; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.Online {
+	display: inline-block;
+	margin: 12px 0 0 50px;
+}
+
+#panel img {
+	display: block;
+	float: right;
+	margin: 8px 50px 0 0;
+}
+
+#hidden_panel:hover #panel {
+    top: 142px;
+}
+
+#hidden_panel:hover {
+	top: 118px;
+}
+
+.headline {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 580px;
+	top: 32px;
+	margin-bottom: 30px;
+}
+
+#pellucid {
+	position: absolute;	
+	background: rgba(0, 0, 0, 0.4);
+	width: 580px;
+	height: 560px;
+	margin-left: 90px;
+	padding: 0 0 0 10px;
+	color: #fff;
+	font-family: Century Gothic;
+	line-height: 0.5px;
+	border-radius: 0 0 300px 0;
+}
+
+h1 {
+	color: #33adff;
+	font-size: 58px;
+}
+
+.first {
+	font-size: 36px;
+}
+
+.gotov {
+	font-size: 40px
+}
+
+.second {
+	font-size: 22px;
+	margin-left: 45px;
+	margin-top: 45px;
+}
+
+.idea {
+	font-weight: bold;
+	font-size: 30px;
+}
+.third {
+	font-size: 24px;
+	margin-top: 45px;
+}
+
+.foto-block {
+	position: relative;
+	width: 300px;
+	height: 450px;
+	top: 120px;
+	float: right;
+	margin-right: 90px;
+	text-align: center;
+}
+
+.photo {
+	width: 100%;
+}
+
+.zhadko {
+	position: absolute;
+	text-align: center;
+}
+
+
+h2 {
+	color: #000;
+	font-size: 20px;
+	font-family: Franklin Gothic Book;
+	border: 4px double #1a1a1a;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.jadko img {
+	border: 2px solid #1a1a1a;
+}
+
+.form-control {
+	height: 20px;
+	width: 140px;
+	font-size: 14px;
+	margin: 4px;
+	border: 2px solid #66ceda;
+	border-radius: 5px;
+	box-shadow: 0 3px 4px -3px rgba(0, 0, 0, .2);
+	outline:none;
+	padding-left: 3px;
+}
+
+.form-control:hover {
+	border-color: #4378ff;
+	transition: all 0.4s;
+}
+
+#email {
+	width: 160px;
+	box-shadow: 0 3px 4px -3px rgba(0, 0, 0, .2);
+}
+
+#message {
+	height: 40px;
+	width: 200px;
+	font-size: 16px;
+	margin: 4px;
+	border: 2px solid #66ceda;
+	border-radius: 5px;
+	box-shadow: 0 3px 4px -3px rgba(0, 0, 0, .2);
+	outline:none;
+	padding-left: 3px;
+	resize: none;
+}
+
+#message:hover {
+	border-color: #000066;
+	transition: all 0.4s;
+}
+
+#sendMail {
+	position: relative;
+	height: 42px;
+	width: 64px;
+	margin-top: 10px;
+	margin-right: 15px;
+	float: right;
+	cursor: pointer;
+  	padding: 0 auto;
+ 	font: inherit;
+  	color: #fff;
+  	background-color: #2ca8c6;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	outline: none;
+	border-radius: 4px;
+	border-left: 2px solid #fff;
+	border-top: 2px solid #fff;
+}
+
+#sendMail:hover {
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+#errorMess {
+	position: relative;
+	color: #990000;
+	margin-top: -4px;
+	font-size: 15px;
+}
+
+.course {
+	position: relative;
+	width: 50%;
+	height: 105px;
+	margin: 0 auto;
+	box-shadow: 0px -7px 8px -10px #fff;
+}
+
+.graph {
+	position: absolute;
+	height: 375px;
+	width: 1170px;
+	margin: 0 auto;
+	bottom: 0px;
+}
+
+.card {
+	width: 49%;
+	float: left;
+	bottom: 10px;
+}
+
+.card1 {
+	width: 51%;
+	float: right;
+	text-align: right;
+	bottom: 10px;
+}
+
+h3 {
+	color: white;
+	font-size: 18px;
+}
+
+.back-to-top {
+	position: fixed;
+	right: 40px;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	border-color: transparent;
+	background-color: #333399;
+	border-radius: 50%;
+	opacity: 0.7;
+	-webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.back-to-top:hover {
+	filter: brightness(1.5);
+	background-color: #0080ff;
+	outline: none;
+	-webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.left-site-foto {
+	width: 48px;
+	height: 48px;
+}
+
+.back-to-top.active {
+	bottom: 30px;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	}
+
+	.graph {
+		position: absolute;
+		height: 315px;
+		width: 970px;
+		margin: 0 auto;
+		bottom: 0px;
+		padding: 0 auto;
+	}
+	.card {
+		width: 50%;
+		float: left;
+	}
+
+	.card1 {
+		width: 50%;
+		float: right;
+		text-align: right;
+	}
+	h3 {
+		color: white;
+		font-size: 15px;
+	}
+	#pellucid {
+		position: absolute;	
+		background: rgba(0, 0, 0, 0.4);
+		width: 580px;
+		height: 560px;
+		top: 0px;
+		margin-left: 20px;
+		padding: 0 0 0 10px;
+		color: #fff;
+		font-family: Century Gothic;
+		line-height: 0.5px;
+		border-radius: 0 0 300px 0;
+	}
+	h1 {
+		color: #33adff;
+		font-size: 56px;
+	}
+
+	.first {
+		font-size: 36px;
+	}
+
+	.gotov {
+		font-size: 40px
+	}
+
+	.second {
+		font-size: 22px;
+		margin-left: 45px;
+		margin-top: 45px;
+	}
+
+	.idea {
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.third {
+		font-size: 24px;
+		margin-top: 45px;
+	}
+
+	.foto-block {
+		margin-right: 20px;
+	}
+	#hidden_panel {
+	    margin-left: 628px; /* отступ справа */
+	}
+	.button {
+		margin: 88px 0px 0px 30px;
+	}
+	.logo {
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		left: 0px;
+	}
+	.headline {
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+	.menu li {
+		margin-right: 10px;
+	}
+	.menu a {
+		font-size: 11px;
+		font-weight: bold;	
+	}
+	#hidden_panel {
+	    margin-left: 476px; /* отступ справа */
+	    width: 240px; /* ширина блока */
+	}
+	#panel {
+	    width: 244px; /* ширина блока */
+	    height: 40px; /* высота блока */
+	    font-size: 16px;
+	}
+	.Online {
+		margin: 10px 0 0 25px;
+	}
+
+	#panel img {
+		margin: 4px 25px 0px 0px;
+		width: 32px;
+		float: right;
+	}
+	.form-control {
+		height: 20px;
+		width: 100px;
+		font-size: 12px;
+	}
+	#message {
+		height: 40px;
+		width: 150px;
+		resize: none;
+		float: left;
+	}
+	#sendMail {
+		margin-top: 10px;
+		margin-right: 8px;
+	}
+	.button {
+		margin: 88px 0px 0px 15px;
+	}
+	.logo {
+		margin: 0 0 0 0;
+		float: left;
+	}
+	.course {
+		width: 50%;
+		height: 50px;
+	}
+	.graph {
+		height: 535px;
+		width: 545px;
+		margin: 0 auto;
+		bottom: 0px;
+		padding: 0 10px 0 30px;
+	}
+	.card {
+		display: flex;
+		width: 98%;
+		text-align: center;
+		bottom: 5px;
+	}
+	.card1 {
+		display: flex;
+		width: 98%;
+		text-align: center;
+		bottom: 0px;
+	}
+	h3 {
+		color: white;
+		font-size: 16px;
+		margin: 3px;
+	}
+	#pellucid {
+		margin-left: 10px;
+		width: 440px;
+		height: 410px;
+		border-radius: 0 0 250px 0;
+	}
+	h1 {
+		color: #33adff;
+		font-size: 44px;
+	}
+
+	.first {
+		font-size: 26px;
+	}
+
+	.gotov {
+		font-size: 30px;
+	}
+
+	.second {
+		font-size: 17px;
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+
+	.idea {
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.third {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	.foto-block {
+		margin-right: 10px;
+		position: relative;
+		width: 230px;
+		top: 62px;
+		float: right;
+	}
+	.photo {
+		width: 100%;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	.headline {
+		margin-bottom: 10px;
+		height: 440px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+	.menu li {
+		margin-right: 15px;
+	}
+	.menu a {
+		font-size: 12px;
+		font-weight: bold;
+		margin:0 auto;
+	}
+	nav {
+		margin-top: 85px;
+		left: 50%;
+		margin-left: -50%;
+	}
+	.course {
+		width: 50%;
+		height: 20px;
+	}
+	.graph {
+		height: 575px;
+		width: 550px;
+		margin: 0 auto;
+		bottom: 0px;
+		padding: 0 0 0 0;
+	}
+	.card {
+		display: block;
+		width: 93%;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.card1 {
+		display: block;
+		width: 96%;
+		text-align: center;
+		bottom: 0px;
+	}
+	h3 {
+		color: white;
+		font-size: 16px;
+		margin: 3px;
+	}
+	#pellucid {
+		margin-left: 10px;
+		width: 320px;
+		height: 340px;
+		border-radius: 0 0 150px 0;
+	}
+	h1 {
+		color: #33adff;
+		font-size: 32px;
+	}
+
+	.first {
+		font-size: 20px;
+	}
+
+	.gotov {
+		font-size: 26px;
+	}
+
+	.second {
+		font-size: 14px;
+		margin-left: 10px;
+		margin-top: 25px;
+	}
+
+	.idea {
+		font-weight: bold;
+		font-size: 16px;
+	}
+	.third {
+		font-size: 16px;
+		margin-top: 25px;
+	}
+	.foto-block {
+		margin-right: 1%;
+		position: relative;
+		width: 35%;
+		height: 250px;
+		top: 48px;
+		float: right;
+	}
+	.photo {
+		width: 100%;
+	}
+	h2 {
+		font-size: 12px;
+	}
+	#hidden_panel {
+	    left: 50%;
+	    margin-left: -120px;
+	    width: 240px; /* ширина блока */
+	}
+	#panel {
+	    width: 244px; /* ширина блока */
+	    height: 40px; /* высота блока */
+	    font-size: 16px;
+	}
+	.Online {
+		margin: 10px 0 0 25px;
+	}
+
+	#panel img {
+		margin: 4px 25px 0px 0px;
+		width: 32px;
+		float: right;
+	}
+	.form-control {
+		height: 20px;
+		width: 100px;
+		font-size: 12px;
+	}
+	#message {
+		height: 40px;
+		width: 150px;
+		resize: none;
+		float: left;
+	}
+	#sendMail {
+		margin-top: 10px;
+		margin-right: 8px;
+	}
+	.button {
+		margin: 0;
+		float: right;
+		right: 50px;
+		position: absolute;
+		color: #dcdbdb;
+		border-radius: 0 0 10px 10px;
+	}
+	.logo {
+		position: absolute;
+		margin: 5px 0 0 40px;
+		float: left;
+		width: 140px;
+	}
+	.headline {
+		top: 50px;
+		margin-bottom: 60px;
+		height: 340px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.menu li {
+		margin-right: 15px;
+	}
+	.menu a {
+		font-size: 11px;
+		font-weight: bold;
+		margin:0 auto;
+	}
+	nav {
+		margin-top: 85px;
+		left: 50%;
+		margin-left: -50%;
+	}
+	.course {
+		width: 50%;
+		height: 20px;
+	}
+	.graph {
+		height: 535px;
+		width: 100%;
+		margin: 0 auto;
+		bottom: 0px;
+		padding: 0 0 0 0;
+	}
+	.card {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.card1 {
+		display: block;
+		width: 100%;
+		text-align: center;
+		bottom: 10px;
+	}
+	h3 {
+		color: white;
+		font-size: 16px;
+		margin: 5px;
+	}
+	#pellucid {
+		margin-left: 5px;
+		width: 280px;
+		height: 310px;
+		border-radius: 0 0 100px 0;
+	}
+	h1 {
+		color: #33adff;
+		font-size: 28px;
+	}
+
+	.first {
+		font-size: 18px;
+	}
+
+	.gotov {
+		font-size: 24px;
+	}
+
+	.second {
+		font-size: 12px;
+		margin-left: 10px;
+		margin-top: 25px;
+	}
+
+	.idea {
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.third {
+		font-size: 15px;
+		margin-top: 25px;
+	}
+	.foto-block {
+		margin-right: 1%;
+		position: relative;
+		width: 29%;
+		height: 250px;
+		top: 48px;
+		float: right;
+	}
+	.photo {
+		width: 100%;
+	}
+	h2 {
+		font-size: 12px;
+	}
+	#hidden_panel {
+	    left: 50%;
+	    margin-left: -120px;
+	    width: 240px; /* ширина блока */
+	}
+	#panel {
+	    width: 244px; /* ширина блока */
+	    height: 40px; /* высота блока */
+	    font-size: 16px;
+	}
+	.Online {
+		margin: 10px 0 0 25px;
+	}
+
+	#panel img {
+		margin: 4px 25px 0px 0px;
+		width: 32px;
+		float: right;
+	}
+	.form-control {
+		height: 20px;
+		width: 100px;
+		font-size: 12px;
+	}
+	#message {
+		height: 40px;
+		width: 150px;
+		resize: none;
+		float: left;
+	}
+	#sendMail {
+		margin-top: 10px;
+		margin-right: 8px;
+	}
+	.button {
+		margin: 0;
+		float: right;
+		right: 50px;
+		position: absolute;
+		color: #dcdbdb;
+		border-radius: 0 0 10px 10px;
+	}
+	.logo {
+		position: absolute;
+		margin: 5px 0 0 40px;
+		float: left;
+		width: 140px;
+	}
+	.headline {
+		top: 50px;
+		margin-bottom: 100px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 424px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.menu li {
+		margin-right: 19px;
+	}
+	.menu a {
+		font-size: 9px;
+		font-weight: normal;
+	}
+	nav {
+		margin-top: 85px;
+		left: 10px;
+	}
+	.foto-block {
+		display: none;
+	}
+	#pellucid {
+		margin-left: 10px;
+		width: 90%;
+		height: 350px;
+		border-radius: 0 0 170px 0;
+	}
+	h1 {
+		color: #33adff;
+		font-size: 34px;
+	}
+
+	.first {
+		font-size: 22px;
+	}
+
+	.gotov {
+		font-size: 24px;
+	}
+
+	.second {
+		font-size: 14px;
+		margin-left: 10px;
+		margin-top: 25px;
+	}
+
+	.idea {
+		font-weight: bold;
+		font-size: 17px;
+	}
+	.third {
+		font-size: 16px;
+		margin-top: 25px;
+	}
+	.logo {
+		position: absolute;
+		margin: 5px 0 0 20px;
+		float: left;
+		width: 140px;
+	}
+	.headline {
+		top: 50px;
+		margin-bottom: 80px;
+		height: 350px;
+	}
+	.back-to-top {
+		right: 50%;
+		margin-right: -25px;
+	}
+
+	.back-to-top.active {
+		bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 374px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.menu li {
+		margin-right: 13px;
+	}
+	.menu a {
+		font-size: 8px;
+		font-weight: normal;
+	}
+	nav {
+		margin-top: 85px;
+		left: 10px;
+	}
+	.foto-block {
+		display: none;
+	}
+	#pellucid {
+		margin-left: 10px;
+		width: 90%;
+		height: 320px;
+		border-radius: 0 0 0 0;
+	}
+	h1 {
+		color: #33adff;
+		font-size: 28px;
+	}
+
+	.first {
+		font-size: 18px;
+	}
+
+	.gotov {
+		font-size: 20px;
+	}
+
+	.second {
+		font-size: 14px;
+		margin-left: 10px;
+		margin-top: 25px;
+	}
+
+	.idea {
+		font-weight: bold;
+		font-size: 15px;
+	}
+	.third {
+		font-size: 16px;
+		margin-top: 25px;
+	}
+	.logo {
+		position: absolute;
+		margin: 5px 0 0 20px;
+		float: left;
+		width: 140px;
+	}
+	.headline {
+		top: 50px;
+		margin-bottom: 80px;
+		height: 350px;
+	}
+	.back-to-top {
+		right: 50%;
+		margin-right: -25px;
+	}
+
+	.back-to-top.active {
+		bottom: 20px;
+	}
+}

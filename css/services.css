@@ -1,0 +1,1890 @@
+/*css*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+.heading-clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+header {
+	font-family: Arial;
+	background: url(../img/header.jpg) no-repeat center top / cover; 
+	height: 118px;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.logo {
+	margin: 0;
+	padding-left: 46px;
+	float: left;
+}
+
+nav {
+	float: right;
+	margin-top: 54px;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 38px
+}
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+
+    -webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;	
+}
+
+.menu a:hover {
+	color: #66ceda;
+}
+
+.menu a:after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0%;
+	background-color: #66ceda;
+	transition: width .3s ease-in-out;
+}
+
+.menu a:hover:after,
+.menu a:focus:after {
+	width: 100%;
+}
+
+.button {
+	position: relative;
+	background: #252525;
+	color: #dcdbdb;
+	border-radius: 10px 10px 0px 0px;
+	display: block;
+	width: 60px;
+	height: 20px;
+	margin: 88px 0px 0px 88px;
+	padding: 5px 0px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left;
+
+	-webkit-transition: 0.3s ease-in-out; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+	background: #A4A4A4;
+	color: #252525;
+}
+
+section {
+	background: url(../img/Fon.jpg);
+	background-size: cover;
+	height: 1112px;
+	background-position: center;
+	position: relative;
+	top: 118px;
+}
+
+#hidden_panel {
+    position: fixed; /* положение */
+    top: 0px; /* отступ сверху */
+    margin-left: 768px; /* отступ справа */
+    background: #d8d8d8; /* цвет фона */
+    width: 320px; /* ширина блока */
+    height: 140px; /* высота блока */
+    font: 14px Arial; /* размер и тип шрифта */
+    color: #000; /* цвет текста */
+    text-align: center; /* выравнивание текста по центру */
+    border: 2px outset #4378ff;
+    z-index: 2;
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 0 0 0; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 0 0 0;
+    -o-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+}
+
+#panel {
+    position: absolute; /* положение */ 
+    top: 116px; /* отступ сверху */
+    left: -2px; /* отступ слева */
+    background: #66ceda; /* цвет фона */
+    color: #000; /* цвет текста */
+    width: 324px; /* ширина блока */
+    height: 50px; /* высота блока */
+    padding: 0 auto; /* отступы от границ внутри блока */
+    text-align: left;/* выравнивание текста */
+    font-size: 19px;
+    font-family: Calibri;
+    z-index: 2;
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 0 10px 10px; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.Online {
+	display: inline-block;
+	margin: 12px 0 0 50px;
+}
+
+#panel img {
+	display: block;
+	float: right;
+	margin: 8px 50px 0 0;
+}
+
+#hidden_panel:hover #panel {
+    top: 142px;
+}
+
+#hidden_panel:hover {
+	top: 118px;
+}
+
+.form-control {
+	height: 20px;
+	width: 140px;
+	font-size: 14px;
+	margin: 4px;
+	border: 2px solid #66ceda;
+	border-radius: 5px;
+	box-shadow: 0 3px 4px -3px rgba(0, 0, 0, .2);
+	outline:none;
+	padding-left: 3px;
+}
+
+.form-control:hover {
+	border-color: #4378ff;
+	transition: all 0.4s;
+}
+
+#email {
+	width: 160px;
+	box-shadow: 0 3px 4px -3px rgba(0, 0, 0, .2);
+}
+
+#message {
+	height: 40px;
+	width: 200px;
+	font-size: 16px;
+	margin: 4px;
+	border: 2px solid #66ceda;
+	border-radius: 5px;
+	box-shadow: 0 3px 4px -3px rgba(0, 0, 0, .2);
+	outline:none;
+	padding-left: 3px;
+}
+
+#message:hover {
+	border-color: #000066;
+	transition: all 0.4s;
+}
+
+#sendMail {
+	position: relative;
+	height: 42px;
+	width: 64px;
+	margin-top: 10px;
+	margin-right: 15px;
+	float: right;
+	cursor: pointer;
+  	padding: 0 auto;
+ 	font: inherit;
+  	color: #fff;
+  	background-color: #2ca8c6;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	outline: none;
+	border-radius: 4px;
+	border-left: 2px solid #fff;
+	border-top: 2px solid #fff;
+}
+
+#sendMail:hover {
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+#errorMess {
+	position: relative;
+	color: #990000;
+	margin-top: -4px;
+	font-size: 15px;
+}
+
+.content-block {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+}
+
+.first-finance-consulting {
+	position: relative;
+	width: 90%;
+	height: 260px;
+	top: 60px;
+	margin: 0 auto;
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.box-img {
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+	border: 4px outset #33adff;
+	margin-right: 10px;
+	margin-bottom: 0;
+}
+
+.box-text {
+	background: rgba(255, 255, 255, 0.5);
+	border-right: 2px solid #fff;
+	font-family: Verdana;
+	padding-bottom: 14px;
+	padding-top: 14px;
+	font-size: 16px;
+	text-align: left;
+	height: 180px;
+}
+
+.box-text:hover {
+	background: rgba(255, 255, 255, 0.7);
+
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.first-finance-consulting img {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.first-finance-consulting img:hover {
+	transform: scale(1.1);
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.first-finance-consulting h2  {
+	position: absolute;
+	font-size: 18px;
+	color: #fff;
+	left: 10px;
+	top: 165px;
+	opacity: 0.75;
+}
+
+.second-business-plan {
+	position: relative;
+	width: 90%;
+	height: 200px;
+	color: #000;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.box-text2 {
+	background: rgba(255, 255, 255, 0.5);
+	border-left: 2px solid #fff;
+	font-family: Verdana;
+	padding-bottom: 14px;
+	padding-top: 14px;
+	font-size: 16px;
+	text-align: right;
+}
+
+.box-img2 {
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	float: right;
+	border: 4px outset #33adff;
+	margin-left: 10px;
+	margin-bottom: 0;
+}
+
+.box-text2:hover {
+	background: rgba(255, 255, 255, 0.7);
+
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.second-business-plan img {
+	width: 100%;
+	float: right;
+	position: relative;
+}
+
+.second-business-plan img:hover {
+	transform: scale(1.1);
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.second-business-plan h2  {
+	position: absolute;
+	font-size: 18px;
+	color: #fff;
+	right: 10px;
+	top: 165px;
+	opacity: 0.75;
+}
+
+.download {
+	position: relative;
+	color: #00e673;
+}
+
+.downloadbox {
+	position: relative;
+	width: 410px;
+	height: 50px;
+	float: right;
+	margin-right: 80px;
+	margin-top: 30px;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+.downloadbox img {
+	position: relative;
+	float: left;
+}
+
+.downloadtext {
+	position: relative;
+	float: right;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 15px;
+
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.downloadtext:hover {
+	color: #fff;
+}
+
+.downloadtext:after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0%;
+	background-color: #fff;
+	transition: width .5s ease-in-out;
+}
+
+.downloadtext:hover:after,
+.downloadtext:focus:after {
+	width: 100%;
+}
+
+.third-business-ideas {
+	position: relative;
+	width: 90%;
+	height: 235px;
+	top: 15px;
+	margin: 0 auto;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.box-img3 {
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+	border: 4px outset #33adff;
+	margin-right: 10px;
+	margin-bottom: 0;
+}
+
+.box-text3 {
+	padding-top: 14px;
+	background: rgba(255, 255, 255, 0.5);
+	font-family: Verdana;
+	border-right: 2px solid #fff;
+	padding-bottom: 14px;
+	font-size: 16px;
+}
+
+.box-text3:hover {
+	background: rgba(255, 255, 255, 0.7);
+
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.third-business-ideas img {
+	width: 100%;
+	float: center;
+	position: relative;
+}
+
+.third-business-ideas img:hover {
+	transform: scale(1.1);
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.third-business-ideas h2  {
+	position: absolute;
+	font-size: 18px;
+	color: #fff;
+	left: 10px;
+	top: 165px;
+	opacity: 0.75;
+}
+
+.fourth-analytics {
+	position: relative;
+	width: 90%;
+	height: 200px;
+	margin: 0 auto;
+	color: #000;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.box-text4 {
+	background: rgba(255, 255, 255, 0.5);
+	border-left: 2px solid #fff;
+	font-family: Verdana;
+	padding-bottom: 14px;
+	padding-top: 14px;
+	font-size: 16px;
+	text-align: right;
+}
+
+.box-img4 {
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	float: right;
+	border: 4px outset #33adff;
+	margin-left: 10px;
+	margin-bottom: 0;
+}
+
+.box-text4:hover {
+	background: rgba(255, 255, 255, 0.7);
+
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.fourth-analytics img {
+	width: 100%;
+	float: right;
+	position: relative;
+	margin-left: 0;
+}
+
+.fourth-analytics img:hover {
+	transform: scale(1.1);
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.fourth-analytics h2  {
+	position: absolute;
+	font-size: 18px;
+	color: #fff;
+	right: 10px;
+	top: 165px;
+	opacity: 0.75;
+}
+
+.download2 {
+	position: relative;
+	color: #00e673;
+}
+
+.downloadbox2 {
+	position: relative;
+	width: 420px;
+	height: 50px;
+	float: right;
+	margin-right: 70px;
+	margin-top: 15px;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+.downloadbox2 img {
+	position: relative;
+	float: left;
+}
+
+.downloadtext2 {
+	position: relative;
+	float: right;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 10px;
+	line-height: 10px;
+
+	-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.downloadtext2:hover {
+	color: #fff;
+}
+
+.downloadtext2:after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0%;
+	background-color: #fff;
+	transition: width .5s ease-in-out;
+}
+
+.downloadtext2:hover:after,
+.downloadtext2:focus:after {
+	width: 100%;
+}
+
+.back-to-top {
+	position: fixed;
+	right: 40px;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	border-color: transparent;
+	background-color: #333399;
+	border-radius: 50%;
+	opacity: 0.7;
+	-webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.back-to-top:hover {
+	filter: brightness(1.5);
+	background-color: #0080ff;
+	outline: none;
+	-webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.left-site-foto {
+	width: 48px;
+	height: 48px;
+}
+
+.back-to-top.active {
+	bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	}
+	#hidden_panel {
+	    margin-left: 628px; /* отступ справа */
+	}
+	.button {
+		margin: 88px 0px 0px 30px;
+	}
+	.logo {
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		left: 0px;
+	}
+	.content-block {
+		width: 100%;
+		height: 672px;
+	}
+	.first-finance-consulting {
+		position: relative;
+		width: 95%;
+		height: 260px;
+		top: 60px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 30px;
+	}
+	.box-text {
+		background: rgba(255, 255, 255, 0.5);
+		border-right: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-top: 14px;
+		font-size: 14px;
+		text-align: left;
+		height: 180px;
+	}
+	.second-business-plan {
+		position: relative;
+		width: 95%;
+		height: 200px;
+		color: #000;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.third-business-ideas {
+		position: relative;
+		width: 95%;
+		height: 235px;
+		top: 15px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 10px;
+	}
+	.fourth-analytics {
+		position: relative;
+		width: 95%;
+		height: 200px;
+		margin: 0 auto;
+		color: #000;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+	.menu li {
+		margin-right: 10px;
+	}
+	.menu a {
+		font-size: 11px;
+		font-weight: bold;	
+	}
+	#hidden_panel {
+	    margin-left: 476px; /* отступ справа */
+	    width: 240px; /* ширина блока */
+	}
+	#panel {
+	    width: 244px; /* ширина блока */
+	    height: 40px; /* высота блока */
+	    font-size: 16px;
+	}
+	.Online {
+		margin: 10px 0 0 25px;
+	}
+
+	#panel img {
+		margin: 4px 25px 0px 0px;
+		width: 32px;
+		float: right;
+	}
+	.form-control {
+		height: 20px;
+		width: 100px;
+		font-size: 12px;
+	}
+	#message {
+		height: 40px;
+		width: 150px;
+		resize: none;
+		float: left;
+	}
+	#sendMail {
+		margin-top: 10px;
+		margin-right: 8px;
+	}
+	.button {
+		margin: 88px 0px 0px 15px;
+	}
+	.logo {
+		margin: 0 0 0 0;
+		float: left;
+	}
+	.content-block {
+		width: 100%;
+		height: 732px;
+	}
+
+	.first-finance-consulting {
+		position: relative;
+		width: 95%;
+		height: 260px;
+		top: 60px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 30px;
+	}
+	.second-business-plan {
+		position: relative;
+		width: 95%;
+		height: 200px;
+		color: #000;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.third-business-ideas {
+		position: relative;
+		width: 95%;
+		height: 200px;
+		top: 15px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 20px;
+	}
+	.fourth-analytics {
+		position: relative;
+		width: 95%;
+		height: 200px;
+		margin: 0 auto;
+		color: #000;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.box-img {
+		width: 40%;
+		height: 60%;
+		overflow: hidden;
+		float: left;
+		border: 4px outset #33adff;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.box-text {
+		background: rgba(255, 255, 255, 0.5);
+		border-right: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-left: 20px;
+		padding-top: 10px;
+		font-size: 13px;
+		text-align: left;
+		height: 180px;
+	}
+	.box-text2 {
+		background: rgba(255, 255, 255, 0.5);
+		border-left: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-top: 14px;
+		font-size: 16px;
+		text-align: right;
+	}
+
+	.box-img2 {
+		width: 40%;
+		height: 78%;
+		overflow: hidden;
+		float: right;
+		border: 4px outset #33adff;
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	.box-img3 {
+		width: 40%;
+		height: 78%;
+		overflow: hidden;
+		float: left;
+		border: 4px outset #33adff;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.box-text3 {
+		padding-top: 8px;
+		background: rgba(255, 255, 255, 0.5);
+		font-family: Verdana;
+		border-right: 2px solid #fff;
+		padding-bottom: 3px;
+		font-size: 14px;
+	}
+	.box-text4 {
+		background: rgba(255, 255, 255, 0.5);
+		border-left: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-top: 14px;
+		font-size: 14px;
+		text-align: right;
+	}
+
+	.box-img4 {
+		width: 40%;
+		height: 78%;
+		overflow: hidden;
+		float: right;
+		border: 4px outset #33adff;
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	.downloadbox {
+		position: relative;
+		width: 50%;
+		height: 50px;
+		float: right;
+		margin-right: 10px;
+		margin-top: 20px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 15px;
+		font-size: 13px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.downloadbox2 {
+		position: relative;
+		width: 55%;
+		height: 50px;
+		float: left;
+		margin-right: 10px;
+		margin-top: 10px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext2 {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 10px;
+		line-height: 10px;
+		font-size: 14px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.first-finance-consulting img {
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+	.second-business-plan img {
+		width: 100%;
+		float: right;
+		position: relative;
+	}
+	.third-business-ideas img {
+		width: 100%;
+		float: center;
+		position: relative;
+	}
+	.fourth-analytics img {
+		width: 100%;
+		float: right;
+		position: relative;
+		margin-left: 0;
+	}
+	.first-finance-consulting h2  {
+		position: absolute;
+		font-size: 18px;
+		color: #fff;
+		left: 10px;
+		top: 125px;
+		opacity: 0.75;
+	}
+	.second-business-plan h2  {
+		position: absolute;
+		font-size: 18px;
+		color: #fff;
+		right: 10px;
+		top: 125px;
+		opacity: 0.75;
+	}
+	.third-business-ideas h2  {
+		position: absolute;
+		font-size: 18px;
+		color: #fff;
+		left: 10px;
+		top: 120px;
+		opacity: 0.75;
+	}
+	.fourth-analytics h2  {
+		position: absolute;
+		font-size: 18px;
+		color: #fff;
+		right: 10px;
+		top: 125px;
+		opacity: 0.75;
+	}
+}
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+	.menu li {
+		margin-right: 15px;
+	}
+	.menu a {
+		font-size: 12px;
+		font-weight: bold;
+		margin:0 auto;
+	}
+	nav {
+		margin-top: 85px;
+		left: 50%;
+		margin-left: -50%;
+	}
+	#hidden_panel {
+	    left: 50%;
+	    margin-left: -120px;
+	    width: 240px; /* ширина блока */
+	}
+	#panel {
+	    width: 244px; /* ширина блока */
+	    height: 40px; /* высота блока */
+	    font-size: 16px;
+	}
+	.Online {
+		margin: 10px 0 0 25px;
+	}
+
+	#panel img {
+		margin: 4px 25px 0px 0px;
+		width: 32px;
+		float: right;
+	}
+	.form-control {
+		height: 20px;
+		width: 100px;
+		font-size: 12px;
+	}
+	#message {
+		height: 40px;
+		width: 150px;
+		resize: none;
+		float: left;
+	}
+	#sendMail {
+		margin-top: 10px;
+		margin-right: 8px;
+	}
+	.button {
+		margin: 0;
+		float: right;
+		right: 50px;
+		position: absolute;
+		color: #dcdbdb;
+		border-radius: 0 0 10px 10px;
+	}
+	.logo {
+		position: absolute;
+		margin: 5px 0 0 40px;
+		float: left;
+		width: 140px;
+	}
+	.content-block {
+		width: 100%;
+		height: 832px;
+	}
+
+	.first-finance-consulting {
+		position: relative;
+		width: 100%;
+		height: 260px;
+		top: 60px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 30px;
+	}
+	.second-business-plan {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		color: #000;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.third-business-ideas {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		top: 15px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 20px;
+	}
+	.fourth-analytics {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		margin: 0 auto;
+		color: #000;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.box-img {
+		width: 40%;
+		height: 47%;
+		overflow: hidden;
+		float: left;
+		border: 4px outset #33adff;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.box-text {
+		background: rgba(255, 255, 255, 0.5);
+		border-right: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-left: 20px;
+		padding-top: 10px;
+		font-size: 12px;
+		text-align: left;
+		height: 180px;
+	}
+	.box-text2 {
+		background: rgba(255, 255, 255, 0.5);
+		border-left: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-top: 14px;
+		font-size: 15px;
+		text-align: right;
+	}
+
+	.box-img2 {
+		width: 40%;
+		height: 61%;
+		overflow: hidden;
+		float: right;
+		border: 4px outset #33adff;
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	.box-img3 {
+		width: 40%;
+		height: 61%;
+		overflow: hidden;
+		float: left;
+		border: 4px outset #33adff;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.box-text3 {
+		padding-top: 8px;
+		background: rgba(255, 255, 255, 0.5);
+		font-family: Verdana;
+		border-right: 2px solid #fff;
+		padding-bottom: 3px;
+		padding-left: 20px;
+		font-size: 14px;
+	}
+	.box-text4 {
+		background: rgba(255, 255, 255, 0.5);
+		border-left: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-right: 20px;
+		padding-top: 14px;
+		font-size: 14px;
+		text-align: right;
+	}
+
+	.box-img4 {
+		width: 40%;
+		height: 61%;
+		overflow: hidden;
+		float: right;
+		border: 4px outset #33adff;
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	.downloadbox {
+		position: relative;
+		width: 80%;
+		height: 50px;
+		float: left;
+		left: 10%;
+		margin-top: 10px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 15px;
+		font-size: 16px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.downloadbox2 {
+		position: relative;
+		width: 70%;
+		height: 50px;
+		left: 15%;
+		margin-top: 10px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext2 {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 10px;
+		line-height: 10px;
+		font-size: 14px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.first-finance-consulting img {
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+	.second-business-plan img {
+		width: 100%;
+		float: right;
+		position: relative;
+	}
+	.third-business-ideas img {
+		width: 100%;
+		float: center;
+		position: relative;
+	}
+	.fourth-analytics img {
+		width: 100%;
+		float: right;
+		position: relative;
+		margin-left: 0;
+	}
+	.first-finance-consulting h2  {
+		position: absolute;
+		font-size: 17px;
+		color: #fff;
+		left: 10px;
+		top: 90px;
+		opacity: 0.75;
+	}
+	.second-business-plan h2  {
+		position: absolute;
+		font-size: 18px;
+		color: #fff;
+		right: 10px;
+		top: 90px;
+		opacity: 0.75;
+	}
+	.third-business-ideas h2  {
+		position: absolute;
+		font-size: 18px;
+		color: #fff;
+		left: 10px;
+		top: 85px;
+		opacity: 0.75;
+	}
+	.fourth-analytics h2  {
+		position: absolute;
+		font-size: 18px;
+		color: #fff;
+		right: 10px;
+		top: 90px;
+		opacity: 0.75;
+	}
+}
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.menu li {
+		margin-right: 13px;
+	}
+	.menu a {
+		font-size: 11px;
+		font-weight: bold;
+		margin:0 auto;
+	}
+	nav {
+		margin-top: 85px;
+		left: 50%;
+		margin-left: -50%;
+	}
+	#hidden_panel {
+	    left: 50%;
+	    margin-left: -120px;
+	    width: 240px; /* ширина блока */
+	}
+	#panel {
+	    width: 244px; /* ширина блока */
+	    height: 40px; /* высота блока */
+	    font-size: 16px;
+	}
+	.Online {
+		margin: 10px 0 0 25px;
+	}
+
+	#panel img {
+		margin: 4px 25px 0px 0px;
+		width: 32px;
+		float: right;
+	}
+	.form-control {
+		height: 20px;
+		width: 100px;
+		font-size: 12px;
+	}
+	#message {
+		height: 40px;
+		width: 150px;
+		resize: none;
+		float: left;
+	}
+	#sendMail {
+		margin-top: 10px;
+		margin-right: 8px;
+	}
+	.button {
+		margin: 0;
+		float: right;
+		right: 50px;
+		position: absolute;
+		color: #dcdbdb;
+		border-radius: 0 0 10px 10px;
+	}
+	.logo {
+		position: absolute;
+		margin: 5px 0 0 40px;
+		float: left;
+		width: 140px;
+	}
+	.content-block {
+		margin: 0 auto;
+		width: 90%;
+		height: 832px;
+	}
+	.first-finance-consulting {
+		position: relative;
+		width: 100%;
+		height: 255px;
+		top: 60px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 30px;
+	}
+	.second-business-plan {
+		position: relative;
+		width: 100%;
+		height: 220px;
+		color: #000;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.third-business-ideas {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		top: 15px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 20px;
+	}
+	.fourth-analytics {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		margin: 0 auto;
+		color: #000;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.box-img {
+		width: 50%;
+		height: 42%;
+		overflow: hidden;
+		float: left;
+		border: 4px outset #33adff;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.box-text {
+		background: rgba(255, 255, 255, 0.5);
+		border-right: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-left: 20px;
+		padding-top: 10px;
+		font-size: 10px;
+		text-align: left;
+		height: 180px;
+	}
+	.box-text2 {
+		background: rgba(255, 255, 255, 0.5);
+		border-left: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-right: 20px;
+		padding-top: 14px;
+		font-size: 12px;
+		text-align: right;
+	}
+
+	.box-img2 {
+		width: 50%;
+		height: 49%;
+		overflow: hidden;
+		float: right;
+		border: 4px outset #33adff;
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	.box-img3 {
+		width: 50%;
+		height: 54%;
+		overflow: hidden;
+		float: left;
+		border: 4px outset #33adff;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.box-text3 {
+		padding-top: 8px;
+		background: rgba(255, 255, 255, 0.5);
+		font-family: Verdana;
+		border-right: 2px solid #fff;
+		padding-bottom: 3px;
+		padding-left: 20px;
+		font-size: 11px;
+	}
+	.box-text4 {
+		background: rgba(255, 255, 255, 0.5);
+		border-left: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-right: 20px;
+		padding-top: 14px;
+		font-size: 13px;
+		text-align: right;
+	}
+
+	.box-img4 {
+		width: 50%;
+		height: 54%;
+		overflow: hidden;
+		float: right;
+		border: 4px outset #33adff;
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	.downloadbox {
+		position: relative;
+		width: 90%;
+		height: 50px;
+		float: left;
+		left: 5%;
+		margin-top: 10px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 15px;
+		font-size: 13px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.downloadbox2 {
+		position: relative;
+		width: 95%;
+		height: 50px;
+		left: 2.5%;
+		margin-top: 10px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext2 {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 10px;
+		line-height: 10px;
+		font-size: 14px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.first-finance-consulting img {
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+	.second-business-plan img {
+		width: 100%;
+		float: right;
+		position: relative;
+	}
+	.third-business-ideas img {
+		width: 100%;
+		float: center;
+		position: relative;
+	}
+	.fourth-analytics img {
+		width: 100%;
+		float: right;
+		position: relative;
+		margin-left: 0;
+	}
+	.first-finance-consulting h2  {
+		position: absolute;
+		font-size: 12px;
+		color: #fff;
+		left: 10px;
+		top: 85px;
+		opacity: 0.75;
+	}
+	.second-business-plan h2  {
+		position: absolute;
+		font-size: 16px;
+		color: #fff;
+		right: 10px;
+		top: 80px;
+		opacity: 0.75;
+	}
+	.third-business-ideas h2  {
+		position: absolute;
+		font-size: 15px;
+		color: #fff;
+		left: 10px;
+		top: 80px;
+		opacity: 0.75;
+	}
+	.fourth-analytics h2  {
+		position: absolute;
+		font-size: 16px;
+		color: #fff;
+		right: 10px;
+		top: 80px;
+		opacity: 0.75;
+	}
+	.back-to-top {
+		right: 25px;
+	}
+
+	.back-to-top.active {
+		bottom: 40px;
+	}
+}
+@media screen and (max-width: 424px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.menu li {
+		margin-right: 17px;
+	}
+	.menu a {
+		font-size: 9px;
+		font-weight: normal;
+	}
+	nav {
+		margin-top: 85px;
+		left: 50%;
+		margin-left: -25%;
+	}
+	.logo {
+		position: absolute;
+		margin: 5px 0 0 20px;
+		float: left;
+		width: 140px;
+	}
+	.back-to-top {
+		right: 50%;
+		margin-right: -25px;
+	}
+
+	.back-to-top.active {
+		bottom: 20px;
+	}
+	.content-block {
+		width: 100%;
+		height: 832px;
+	}
+	.downloadbox2 {
+		position: relative;
+		width: 90%;
+		height: 50px;
+		left: 5%;
+		margin-top: 10px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext2 {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 10px;
+		line-height: 10px;
+		font-size: 13px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+}
+@media screen and (max-width: 374px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.menu li {
+		margin-right: 13px;
+	}
+	.menu a {
+		font-size: 8px;
+		font-weight: normal;
+	}
+	nav {
+		margin-top: 85px;
+		left: 10px;
+	}
+	.logo {
+		position: absolute;
+		margin: 5px 0 0 20px;
+		float: left;
+		width: 140px;
+	}
+	.back-to-top {
+		right: 50%;
+		margin-right: -25px;
+	}
+
+	.back-to-top.active {
+		bottom: 20px;
+	}
+	.content-block {
+		width: 100%;
+		height: 862px;
+	}
+	.first-finance-consulting {
+		position: relative;
+		width: 100%;
+		height: 235px;
+		top: 40px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 20px;
+	}
+	.second-business-plan {
+		position: relative;
+		width: 100%;
+		height: 220px;
+		color: #000;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.third-business-ideas {
+		position: relative;
+		width: 100%;
+		height: 210px;
+		top: 15px;
+		margin: 0 auto;
+		color: #000;
+		margin-bottom: 10px;
+	}
+	.fourth-analytics {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		margin: 0 auto;
+		color: #000;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.box-img {
+		width: 50%;
+		height: 38%;
+		overflow: hidden;
+		float: left;
+		border: 4px outset #33adff;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.box-text {
+		background: rgba(255, 255, 255, 0.5);
+		border-right: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		font-size: 9px;
+		text-align: justify;
+		height: 180px;
+	}
+	.box-text2 {
+		background: rgba(255, 255, 255, 0.5);
+		border-left: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 14px;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-top: 14px;
+		font-size: 12px;
+		text-align: justify;
+	}
+
+	.box-img2 {
+		width: 50%;
+		height: 41%;
+		overflow: hidden;
+		float: right;
+		border: 4px outset #33adff;
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	.box-img3 {
+		width: 50%;
+		height: 45%;
+		overflow: hidden;
+		float: left;
+		border: 4px outset #33adff;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.box-text3 {
+		padding-top: 8px;
+		background: rgba(255, 255, 255, 0.5);
+		font-family: Verdana;
+		border-right: 2px solid #fff;
+		padding-bottom: 3px;
+		padding-left: 20px;
+		font-size: 11px;
+	}
+	.box-text4 {
+		background: rgba(255, 255, 255, 0.5);
+		border-left: 2px solid #fff;
+		font-family: Verdana;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		font-size: 12px;
+		text-align: justify;
+	}
+
+	.box-img4 {
+		width: 50%;
+		height: 45%;
+		overflow: hidden;
+		float: right;
+		border: 4px outset #33adff;
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	.downloadbox {
+		position: relative;
+		width: 90%;
+		height: 50px;
+		float: left;
+		left: 5%;
+		margin-top: 10px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 15px;
+		font-size: 11px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.downloadbox2 {
+		position: relative;
+		width: 98%;
+		height: 30px;
+		left: 1%;
+		margin-top: 10px;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	.downloadtext2 {
+		position: relative;
+		float: right;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 10px;
+		line-height: 10px;
+		font-size: 11px;
+
+		-webkit-transition-duration: 1s ; /* анимационное выдвижение для всех браузеров*/
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.first-finance-consulting img {
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+	.second-business-plan img {
+		width: 100%;
+		float: right;
+		position: relative;
+	}
+	.third-business-ideas img {
+		width: 100%;
+		float: center;
+		position: relative;
+	}
+	.fourth-analytics img {
+		width: 100%;
+		float: right;
+		position: relative;
+		margin-left: 0;
+	}
+	.first-finance-consulting h2  {
+		position: absolute;
+		font-size: 12px;
+		color: #fff;
+		left: 10px;
+		top: 70px;
+		opacity: 0.75;
+	}
+	.second-business-plan h2  {
+		position: absolute;
+		font-size: 14px;
+		color: #fff;
+		right: 10px;
+		top: 65px;
+		opacity: 0.75;
+	}
+	.third-business-ideas h2  {
+		position: absolute;
+		font-size: 13px;
+		color: #fff;
+		left: 10px;
+		top: 65px;
+		opacity: 0.75;
+	}
+	.fourth-analytics h2  {
+		position: absolute;
+		font-size: 14px;
+		color: #fff;
+		right: 10px;
+		top: 65px;
+		opacity: 0.75;
+	}
+}
